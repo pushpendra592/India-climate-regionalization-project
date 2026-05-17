@@ -1,0 +1,9 @@
+cluster,points,temperature_2m_mean_mean,growing_degree_days_mean,precipitation_sum_mean,relative_humidity_2m_mean_mean,shortwave_radiation_sum_mean,frost_risk_mean,heat_stress_mean,temperature_stability_mean,rainfall_reliability_mean,agriculture_suitability_score,agriculture_summary,agriculture_recommendation
+0,135,25.539,15.539,2.201,69.919,17.607,0.0,0.0,0.733,0.011,0.638,balanced-growing-conditions,Balanced conditions for diversified cropping and stable seasonal planning.
+6,200,26.227,16.227,1.612,66.059,19.212,0.0,0.0,0.721,0.009,0.608,balanced-growing-conditions,Balanced conditions for diversified cropping and stable seasonal planning.
+4,231,26.056,16.056,1.465,55.612,18.734,0.0,0.0,0.708,0.012,0.581,balanced-growing-conditions,Balanced conditions for diversified cropping and stable seasonal planning.
+3,89,20.132,10.276,2.61,75.883,14.982,0.0,0.0,0.731,0.008,0.559,"rain-supported, humid-growing-zone",Good fit for rain-fed agriculture with drainage planning.
+5,222,25.714,15.714,1.385,51.769,17.479,0.0,0.0,0.639,0.014,0.513,balanced-growing-conditions,Balanced conditions for diversified cropping and stable seasonal planning.
+2,139,26.727,16.727,0.808,42.983,19.761,0.0,0.0,0.658,0.012,0.451,water-limited,Suitable for drought-tolerant cropping with water management.
+7,88,10.136,4.18,1.314,58.276,17.061,0.148,0.0,0.665,0.01,0.313,balanced-growing-conditions,Balanced conditions for diversified cropping and stable seasonal planning.
+1,49,-2.59,0.0,0.704,62.354,18.436,0.959,0.0,0.784,0.013,0.209,"frost-exposed, water-limited",Prefer cold-tolerant crops and short growing windows.

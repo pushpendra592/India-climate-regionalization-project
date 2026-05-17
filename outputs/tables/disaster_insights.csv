@@ -1,0 +1,9 @@
+cluster,points,heavy_rain_flag_mean,extreme_rain_flag_mean,precipitation_sum_mean,precipitation_sum_interannual_std_mean,wind_speed_120m_mean_mean,wind_power_density_120m_mean,cloud_cover_mean_interannual_std_mean,relative_humidity_2m_mean_mean,solar_utilization_ratio_mean,disaster_risk_score,dominant_hazard,disaster_summary,risk_recommendation
+1,49,0.0,0.0,0.704,73.783,4.752,1.76,9.651,62.354,0.459,0.533,High Wind Exposure,lower-observed-extreme-risk,Strengthen wind-resilient design standards and network reliability planning.
+6,200,0.0,0.0,1.612,105.705,5.624,2.443,3.28,66.059,0.515,0.519,High Wind Exposure,storm-exposed,Strengthen wind-resilient design standards and network reliability planning.
+3,89,0.0,0.0,2.61,125.74,2.31,0.209,3.707,75.883,0.515,0.505,Heavy Rain / Flooding,flood-prone,"Prioritize drainage, runoff management, and flood-resilient infrastructure."
+2,139,0.0,0.0,0.808,80.139,5.06,1.756,6.261,42.983,0.546,0.485,High Wind Exposure,lower-observed-extreme-risk,Strengthen wind-resilient design standards and network reliability planning.
+0,135,0.0,0.0,2.201,92.006,3.903,0.823,3.391,69.919,0.532,0.464,Heavy Rain / Flooding,lower-observed-extreme-risk,"Prioritize drainage, runoff management, and flood-resilient infrastructure."
+7,88,0.0,0.0,1.314,98.943,3.128,0.429,7.59,58.276,0.475,0.434,Heavy Rain / Flooding,lower-observed-extreme-risk,"Prioritize drainage, runoff management, and flood-resilient infrastructure."
+4,231,0.0,0.0,1.465,82.247,4.808,1.502,3.806,55.612,0.528,0.428,Heavy Rain / Flooding,lower-observed-extreme-risk,"Prioritize drainage, runoff management, and flood-resilient infrastructure."
+5,222,0.0,0.0,1.385,71.873,4.101,0.91,4.736,51.769,0.567,0.403,Heavy Rain / Flooding,dry-spell-sensitive,"Prioritize drainage, runoff management, and flood-resilient infrastructure."

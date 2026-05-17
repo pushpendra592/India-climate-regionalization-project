@@ -1,0 +1,1582 @@
+{
+  "best_algorithm": "GMM(k=8)",
+  "best_key": "gmm_k8",
+  "feature_cols": [
+    "nasa_solar_irradiance_allsky",
+    "nasa_solar_irradiance_clearsky",
+    "nasa_clearness_index",
+    "nasa_longwave_radiation",
+    "nasa_uv_index",
+    "nasa_dewpoint_2m",
+    "nasa_earth_skin_temperature",
+    "nasa_specific_humidity",
+    "temperature_2m_mean",
+    "dewpoint_2m_mean",
+    "relative_humidity_2m_mean",
+    "precipitation_sum",
+    "wind_speed_10m_mean",
+    "wind_direction_10m_mean",
+    "surface_pressure_mean",
+    "pressure_msl_mean",
+    "cloud_cover_mean",
+    "shortwave_radiation_sum",
+    "temperature_2m_max",
+    "temperature_2m_min",
+    "relative_humidity_2m_max",
+    "relative_humidity_2m_min",
+    "wind_speed_10m_max",
+    "cloud_cover_low_mean",
+    "cloud_cover_mid_mean",
+    "cloud_cover_high_mean",
+    "temp_range_daily",
+    "humidity_range",
+    "cloud_stratification",
+    "wind_speed_80m_mean",
+    "wind_speed_80m_max",
+    "wind_speed_120m_mean",
+    "wind_speed_120m_max",
+    "wind_speed_180m_mean",
+    "wind_speed_180m_max",
+    "wind_shear_coefficient",
+    "wind_power_density_80m",
+    "wind_power_density_120m",
+    "wind_power_density_180m",
+    "solar_utilization_ratio",
+    "solar_wind_complementarity",
+    "growing_degree_days",
+    "frost_risk",
+    "heat_stress",
+    "soil_temp_proxy",
+    "soil_air_temp_diff",
+    "heavy_rain_flag",
+    "extreme_rain_flag",
+    "temperature_2m_mean_interannual_std",
+    "precipitation_sum_interannual_std",
+    "wind_speed_10m_mean_interannual_std",
+    "cloud_cover_mean_interannual_std"
+  ],
+  "auto_labels": {
+    "6": "Southern Peninsular Belt",
+    "0": "East-Central Monsoon Corridor",
+    "4": "Central Inland Plateau",
+    "2": "Northwest Dry Plains",
+    "3": "Northeast Humid Belt",
+    "5": "Gangetic Alluvial Plains",
+    "1": "Upper Himalayan Cold Pocket",
+    "7": "Western Himalayan Highlands"
+  },
+  "cluster_descriptions": {
+    "0": {
+      "cluster_id": 0,
+      "size": 135,
+      "pct": 11.7,
+      "characteristics": [
+        {
+          "feature": "precipitation_sum",
+          "cluster_mean": 2.2,
+          "global_mean": 1.53,
+          "z_score": 1.12,
+          "description": "HIGH",
+          "summary": "higher rainfall than the India sample average"
+        },
+        {
+          "feature": "relative_humidity_2m_mean",
+          "cluster_mean": 69.92,
+          "global_mean": 58.89,
+          "z_score": 0.98,
+          "description": "HIGH",
+          "summary": "higher humidity than the India sample average"
+        },
+        {
+          "feature": "relative_humidity_2m_max",
+          "cluster_mean": 69.92,
+          "global_mean": 58.89,
+          "z_score": 0.98,
+          "description": "HIGH",
+          "summary": "higher peak humidity than the India sample average"
+        },
+        {
+          "feature": "relative_humidity_2m_min",
+          "cluster_mean": 69.92,
+          "global_mean": 58.89,
+          "z_score": 0.98,
+          "description": "HIGH",
+          "summary": "higher minimum humidity than the India sample average"
+        },
+        {
+          "feature": "nasa_specific_humidity",
+          "cluster_mean": 14.38,
+          "global_mean": 11.33,
+          "z_score": 0.97,
+          "description": "HIGH",
+          "summary": "higher nasa specific humidity than the India sample average"
+        },
+        {
+          "feature": "wind_shear_coefficient",
+          "cluster_mean": 0.14,
+          "global_mean": 0.14,
+          "z_score": 0.94,
+          "description": "HIGH",
+          "summary": "stronger vertical wind change than the India sample average"
+        },
+        {
+          "feature": "nasa_clearness_index",
+          "cluster_mean": 0.52,
+          "global_mean": 0.55,
+          "z_score": -0.76,
+          "description": "LOW",
+          "summary": "lower nasa clearness index than the India sample average"
+        },
+        {
+          "feature": "nasa_dewpoint_2m",
+          "cluster_mean": 18.19,
+          "global_mean": 12.17,
+          "z_score": 0.76,
+          "description": "HIGH",
+          "summary": "higher nasa dewpoint 2m than the India sample average"
+        },
+        {
+          "feature": "dewpoint_2m_mean",
+          "cluster_mean": 18.19,
+          "global_mean": 12.17,
+          "z_score": 0.76,
+          "description": "HIGH",
+          "summary": "higher dewpoint 2m mean than the India sample average"
+        },
+        {
+          "feature": "temperature_2m_mean_interannual_std",
+          "cluster_mean": 0.36,
+          "global_mean": 0.44,
+          "z_score": -0.68,
+          "description": "LOW",
+          "summary": "lower year-to-year temperature variability than the India sample average"
+        },
+        {
+          "feature": "wind_power_density_80m",
+          "cluster_mean": 0.69,
+          "global_mean": 1.12,
+          "z_score": -0.57,
+          "description": "LOW",
+          "summary": "lower wind energy potential than average"
+        },
+        {
+          "feature": "wind_power_density_120m",
+          "cluster_mean": 0.82,
+          "global_mean": 1.33,
+          "z_score": -0.57,
+          "description": "LOW",
+          "summary": "lower wind energy potential than average"
+        },
+        {
+          "feature": "wind_power_density_180m",
+          "cluster_mean": 0.98,
+          "global_mean": 1.58,
+          "z_score": -0.57,
+          "description": "LOW",
+          "summary": "lower wind energy potential than average"
+        },
+        {
+          "feature": "cloud_cover_mean_interannual_std",
+          "cluster_mean": 3.39,
+          "global_mean": 4.67,
+          "z_score": -0.56,
+          "description": "LOW",
+          "summary": "lower year-to-year cloud variability than the India sample average"
+        },
+        {
+          "feature": "solar_wind_complementarity",
+          "cluster_mean": -0.07,
+          "global_mean": -0.73,
+          "z_score": 0.51,
+          "description": "HIGH",
+          "summary": "stronger solar-wind complementarity than average"
+        }
+      ]
+    },
+    "1": {
+      "cluster_id": 1,
+      "size": 49,
+      "pct": 4.2,
+      "characteristics": [
+        {
+          "feature": "frost_risk",
+          "cluster_mean": 0.96,
+          "global_mean": 0.05,
+          "z_score": 4.08,
+          "description": "very HIGH",
+          "summary": "much higher frost risk than the India sample average"
+        },
+        {
+          "feature": "temperature_2m_mean",
+          "cluster_mean": -2.59,
+          "global_mean": 23.15,
+          "z_score": -3.38,
+          "description": "very LOW",
+          "summary": "much lower average temperature than the India sample average"
+        },
+        {
+          "feature": "temperature_2m_max",
+          "cluster_mean": -2.59,
+          "global_mean": 23.15,
+          "z_score": -3.38,
+          "description": "very LOW",
+          "summary": "much lower daytime temperature than the India sample average"
+        },
+        {
+          "feature": "temperature_2m_min",
+          "cluster_mean": -2.59,
+          "global_mean": 23.15,
+          "z_score": -3.38,
+          "description": "very LOW",
+          "summary": "much lower night temperature than the India sample average"
+        },
+        {
+          "feature": "nasa_earth_skin_temperature",
+          "cluster_mean": -2.99,
+          "global_mean": 23.56,
+          "z_score": -3.31,
+          "description": "very LOW",
+          "summary": "much lower nasa earth skin temperature than the India sample average"
+        },
+        {
+          "feature": "soil_temp_proxy",
+          "cluster_mean": -2.99,
+          "global_mean": 23.56,
+          "z_score": -3.31,
+          "description": "very LOW",
+          "summary": "much lower soil temp proxy than the India sample average"
+        },
+        {
+          "feature": "nasa_dewpoint_2m",
+          "cluster_mean": -13.82,
+          "global_mean": 12.17,
+          "z_score": -3.3,
+          "description": "very LOW",
+          "summary": "much lower nasa dewpoint 2m than the India sample average"
+        },
+        {
+          "feature": "dewpoint_2m_mean",
+          "cluster_mean": -13.82,
+          "global_mean": 12.17,
+          "z_score": -3.3,
+          "description": "very LOW",
+          "summary": "much lower dewpoint 2m mean than the India sample average"
+        },
+        {
+          "feature": "nasa_longwave_radiation",
+          "cluster_mean": 19.58,
+          "global_mean": 32.13,
+          "z_score": -3.21,
+          "description": "very LOW",
+          "summary": "much lower nasa longwave radiation than the India sample average"
+        },
+        {
+          "feature": "growing_degree_days",
+          "cluster_mean": 0.0,
+          "global_mean": 14.01,
+          "z_score": -2.81,
+          "description": "very LOW",
+          "summary": "much lower growing degree days than the India sample average"
+        },
+        {
+          "feature": "nasa_specific_humidity",
+          "cluster_mean": 2.8,
+          "global_mean": 11.33,
+          "z_score": -2.7,
+          "description": "very LOW",
+          "summary": "much lower nasa specific humidity than the India sample average"
+        },
+        {
+          "feature": "surface_pressure_mean",
+          "cluster_mean": 81.99,
+          "global_mean": 95.35,
+          "z_score": -2.53,
+          "description": "very LOW",
+          "summary": "much lower surface pressure mean than the India sample average"
+        },
+        {
+          "feature": "cloud_cover_mean_interannual_std",
+          "cluster_mean": 9.65,
+          "global_mean": 4.67,
+          "z_score": 2.18,
+          "description": "very HIGH",
+          "summary": "much higher year-to-year cloud variability than the India sample average"
+        },
+        {
+          "feature": "nasa_solar_irradiance_clearsky",
+          "cluster_mean": 24.73,
+          "global_mean": 22.04,
+          "z_score": 2.1,
+          "description": "very HIGH",
+          "summary": "much higher clear-sky solar potential than the India sample average"
+        },
+        {
+          "feature": "solar_utilization_ratio",
+          "cluster_mean": 0.46,
+          "global_mean": 0.53,
+          "z_score": -2.09,
+          "description": "very LOW",
+          "summary": "much more reliable solar availability than average"
+        },
+        {
+          "feature": "wind_direction_10m_mean",
+          "cluster_mean": 232.07,
+          "global_mean": 196.22,
+          "z_score": 1.53,
+          "description": "very HIGH",
+          "summary": "much higher wind direction 10m mean than the India sample average"
+        },
+        {
+          "feature": "cloud_cover_mean",
+          "cluster_mean": 66.76,
+          "global_mean": 49.24,
+          "z_score": 1.48,
+          "description": "HIGH",
+          "summary": "higher cloud cover mean than the India sample average"
+        },
+        {
+          "feature": "cloud_cover_low_mean",
+          "cluster_mean": 66.76,
+          "global_mean": 49.24,
+          "z_score": 1.48,
+          "description": "HIGH",
+          "summary": "higher cloud cover low mean than the India sample average"
+        },
+        {
+          "feature": "cloud_cover_mid_mean",
+          "cluster_mean": 66.76,
+          "global_mean": 49.24,
+          "z_score": 1.48,
+          "description": "HIGH",
+          "summary": "higher cloud cover mid mean than the India sample average"
+        },
+        {
+          "feature": "cloud_cover_high_mean",
+          "cluster_mean": 66.76,
+          "global_mean": 49.24,
+          "z_score": 1.48,
+          "description": "HIGH",
+          "summary": "higher cloud cover high mean than the India sample average"
+        },
+        {
+          "feature": "temperature_2m_mean_interannual_std",
+          "cluster_mean": 0.28,
+          "global_mean": 0.44,
+          "z_score": -1.45,
+          "description": "LOW",
+          "summary": "lower year-to-year temperature variability than the India sample average"
+        },
+        {
+          "feature": "precipitation_sum",
+          "cluster_mean": 0.7,
+          "global_mean": 1.53,
+          "z_score": -1.36,
+          "description": "LOW",
+          "summary": "lower rainfall than the India sample average"
+        },
+        {
+          "feature": "nasa_clearness_index",
+          "cluster_mean": 0.61,
+          "global_mean": 0.55,
+          "z_score": 1.33,
+          "description": "HIGH",
+          "summary": "higher nasa clearness index than the India sample average"
+        },
+        {
+          "feature": "soil_air_temp_diff",
+          "cluster_mean": -0.4,
+          "global_mean": 0.41,
+          "z_score": -1.21,
+          "description": "LOW",
+          "summary": "lower soil air temp diff than the India sample average"
+        },
+        {
+          "feature": "nasa_solar_irradiance_allsky",
+          "cluster_mean": 11.34,
+          "global_mean": 11.59,
+          "z_score": -0.86,
+          "description": "LOW",
+          "summary": "lower all-sky solar potential than the India sample average"
+        },
+        {
+          "feature": "precipitation_sum_interannual_std",
+          "cluster_mean": 73.78,
+          "global_mean": 89.48,
+          "z_score": -0.58,
+          "description": "LOW",
+          "summary": "lower year-to-year rainfall variability than the India sample average"
+        }
+      ]
+    },
+    "2": {
+      "cluster_id": 2,
+      "size": 139,
+      "pct": 12.1,
+      "characteristics": [
+        {
+          "feature": "nasa_clearness_index",
+          "cluster_mean": 0.61,
+          "global_mean": 0.55,
+          "z_score": 1.42,
+          "description": "HIGH",
+          "summary": "higher nasa clearness index than the India sample average"
+        },
+        {
+          "feature": "relative_humidity_2m_mean",
+          "cluster_mean": 42.98,
+          "global_mean": 58.89,
+          "z_score": -1.41,
+          "description": "LOW",
+          "summary": "lower humidity than the India sample average"
+        },
+        {
+          "feature": "relative_humidity_2m_max",
+          "cluster_mean": 42.98,
+          "global_mean": 58.89,
+          "z_score": -1.41,
+          "description": "LOW",
+          "summary": "lower peak humidity than the India sample average"
+        },
+        {
+          "feature": "relative_humidity_2m_min",
+          "cluster_mean": 42.98,
+          "global_mean": 58.89,
+          "z_score": -1.41,
+          "description": "LOW",
+          "summary": "lower minimum humidity than the India sample average"
+        },
+        {
+          "feature": "cloud_cover_mean",
+          "cluster_mean": 33.79,
+          "global_mean": 49.24,
+          "z_score": -1.3,
+          "description": "LOW",
+          "summary": "lower cloud cover mean than the India sample average"
+        },
+        {
+          "feature": "cloud_cover_low_mean",
+          "cluster_mean": 33.79,
+          "global_mean": 49.24,
+          "z_score": -1.3,
+          "description": "LOW",
+          "summary": "lower cloud cover low mean than the India sample average"
+        },
+        {
+          "feature": "cloud_cover_mid_mean",
+          "cluster_mean": 33.79,
+          "global_mean": 49.24,
+          "z_score": -1.3,
+          "description": "LOW",
+          "summary": "lower cloud cover mid mean than the India sample average"
+        },
+        {
+          "feature": "cloud_cover_high_mean",
+          "cluster_mean": 33.79,
+          "global_mean": 49.24,
+          "z_score": -1.3,
+          "description": "LOW",
+          "summary": "lower cloud cover high mean than the India sample average"
+        },
+        {
+          "feature": "precipitation_sum",
+          "cluster_mean": 0.81,
+          "global_mean": 1.53,
+          "z_score": -1.19,
+          "description": "LOW",
+          "summary": "lower rainfall than the India sample average"
+        },
+        {
+          "feature": "shortwave_radiation_sum",
+          "cluster_mean": 19.76,
+          "global_mean": 18.14,
+          "z_score": 1.14,
+          "description": "HIGH",
+          "summary": "higher solar radiation than the India sample average"
+        },
+        {
+          "feature": "wind_shear_coefficient",
+          "cluster_mean": 0.14,
+          "global_mean": 0.14,
+          "z_score": 0.94,
+          "description": "HIGH",
+          "summary": "stronger vertical wind change than the India sample average"
+        },
+        {
+          "feature": "nasa_solar_irradiance_allsky",
+          "cluster_mean": 11.85,
+          "global_mean": 11.59,
+          "z_score": 0.88,
+          "description": "HIGH",
+          "summary": "higher all-sky solar potential than the India sample average"
+        },
+        {
+          "feature": "soil_air_temp_diff",
+          "cluster_mean": 0.95,
+          "global_mean": 0.41,
+          "z_score": 0.8,
+          "description": "HIGH",
+          "summary": "higher soil air temp diff than the India sample average"
+        },
+        {
+          "feature": "cloud_cover_mean_interannual_std",
+          "cluster_mean": 6.26,
+          "global_mean": 4.67,
+          "z_score": 0.7,
+          "description": "HIGH",
+          "summary": "higher year-to-year cloud variability than the India sample average"
+        },
+        {
+          "feature": "temperature_2m_mean_interannual_std",
+          "cluster_mean": 0.52,
+          "global_mean": 0.44,
+          "z_score": 0.67,
+          "description": "HIGH",
+          "summary": "higher year-to-year temperature variability than the India sample average"
+        },
+        {
+          "feature": "wind_speed_10m_mean",
+          "cluster_mean": 3.57,
+          "global_mean": 3.12,
+          "z_score": 0.59,
+          "description": "HIGH",
+          "summary": "higher surface wind speed than the India sample average"
+        },
+        {
+          "feature": "wind_speed_10m_max",
+          "cluster_mean": 3.57,
+          "global_mean": 3.12,
+          "z_score": 0.59,
+          "description": "HIGH",
+          "summary": "higher wind speed 10m max than the India sample average"
+        },
+        {
+          "feature": "wind_speed_80m_mean",
+          "cluster_mean": 4.78,
+          "global_mean": 4.17,
+          "z_score": 0.59,
+          "description": "HIGH",
+          "summary": "higher elevated wind speed than the India sample average"
+        },
+        {
+          "feature": "wind_speed_80m_max",
+          "cluster_mean": 4.78,
+          "global_mean": 4.17,
+          "z_score": 0.59,
+          "description": "HIGH",
+          "summary": "higher wind speed 80m max than the India sample average"
+        },
+        {
+          "feature": "wind_speed_120m_mean",
+          "cluster_mean": 5.06,
+          "global_mean": 4.41,
+          "z_score": 0.59,
+          "description": "HIGH",
+          "summary": "higher wind speed 120m mean than the India sample average"
+        },
+        {
+          "feature": "wind_speed_120m_max",
+          "cluster_mean": 5.06,
+          "global_mean": 4.41,
+          "z_score": 0.59,
+          "description": "HIGH",
+          "summary": "higher wind speed 120m max than the India sample average"
+        },
+        {
+          "feature": "wind_speed_180m_mean",
+          "cluster_mean": 5.36,
+          "global_mean": 4.67,
+          "z_score": 0.59,
+          "description": "HIGH",
+          "summary": "higher wind speed 180m mean than the India sample average"
+        },
+        {
+          "feature": "wind_speed_180m_max",
+          "cluster_mean": 5.36,
+          "global_mean": 4.67,
+          "z_score": 0.59,
+          "description": "HIGH",
+          "summary": "higher wind speed 180m max than the India sample average"
+        },
+        {
+          "feature": "growing_degree_days",
+          "cluster_mean": 16.73,
+          "global_mean": 14.01,
+          "z_score": 0.55,
+          "description": "HIGH",
+          "summary": "higher growing degree days than the India sample average"
+        },
+        {
+          "feature": "solar_utilization_ratio",
+          "cluster_mean": 0.55,
+          "global_mean": 0.53,
+          "z_score": 0.54,
+          "description": "HIGH",
+          "summary": "more reliable solar availability than average"
+        },
+        {
+          "feature": "surface_pressure_mean",
+          "cluster_mean": 98.16,
+          "global_mean": 95.35,
+          "z_score": 0.53,
+          "description": "HIGH",
+          "summary": "higher surface pressure mean than the India sample average"
+        },
+        {
+          "feature": "nasa_earth_skin_temperature",
+          "cluster_mean": 27.68,
+          "global_mean": 23.56,
+          "z_score": 0.51,
+          "description": "HIGH",
+          "summary": "higher nasa earth skin temperature than the India sample average"
+        },
+        {
+          "feature": "soil_temp_proxy",
+          "cluster_mean": 27.68,
+          "global_mean": 23.56,
+          "z_score": 0.51,
+          "description": "HIGH",
+          "summary": "higher soil temp proxy than the India sample average"
+        }
+      ]
+    },
+    "3": {
+      "cluster_id": 3,
+      "size": 89,
+      "pct": 7.7,
+      "characteristics": [
+        {
+          "feature": "solar_wind_complementarity",
+          "cluster_mean": -4.15,
+          "global_mean": -0.73,
+          "z_score": -2.65,
+          "description": "very LOW",
+          "summary": "much weaker solar-wind complementarity than average"
+        },
+        {
+          "feature": "shortwave_radiation_sum",
+          "cluster_mean": 14.98,
+          "global_mean": 18.14,
+          "z_score": -2.22,
+          "description": "very LOW",
+          "summary": "much lower solar radiation than the India sample average"
+        },
+        {
+          "feature": "nasa_clearness_index",
+          "cluster_mean": 0.48,
+          "global_mean": 0.55,
+          "z_score": -1.99,
+          "description": "very LOW",
+          "summary": "much lower nasa clearness index than the India sample average"
+        },
+        {
+          "feature": "wind_speed_10m_mean",
+          "cluster_mean": 1.63,
+          "global_mean": 3.12,
+          "z_score": -1.93,
+          "description": "very LOW",
+          "summary": "much lower surface wind speed than the India sample average"
+        },
+        {
+          "feature": "wind_speed_10m_max",
+          "cluster_mean": 1.63,
+          "global_mean": 3.12,
+          "z_score": -1.93,
+          "description": "very LOW",
+          "summary": "much lower wind speed 10m max than the India sample average"
+        },
+        {
+          "feature": "wind_speed_80m_mean",
+          "cluster_mean": 2.18,
+          "global_mean": 4.17,
+          "z_score": -1.93,
+          "description": "very LOW",
+          "summary": "much lower elevated wind speed than the India sample average"
+        },
+        {
+          "feature": "wind_speed_80m_max",
+          "cluster_mean": 2.18,
+          "global_mean": 4.17,
+          "z_score": -1.93,
+          "description": "very LOW",
+          "summary": "much lower wind speed 80m max than the India sample average"
+        },
+        {
+          "feature": "wind_speed_120m_mean",
+          "cluster_mean": 2.31,
+          "global_mean": 4.41,
+          "z_score": -1.93,
+          "description": "very LOW",
+          "summary": "much lower wind speed 120m mean than the India sample average"
+        },
+        {
+          "feature": "wind_speed_120m_max",
+          "cluster_mean": 2.31,
+          "global_mean": 4.41,
+          "z_score": -1.93,
+          "description": "very LOW",
+          "summary": "much lower wind speed 120m max than the India sample average"
+        },
+        {
+          "feature": "wind_speed_180m_mean",
+          "cluster_mean": 2.44,
+          "global_mean": 4.67,
+          "z_score": -1.93,
+          "description": "very LOW",
+          "summary": "much lower wind speed 180m mean than the India sample average"
+        },
+        {
+          "feature": "wind_speed_180m_max",
+          "cluster_mean": 2.44,
+          "global_mean": 4.67,
+          "z_score": -1.93,
+          "description": "very LOW",
+          "summary": "much lower wind speed 180m max than the India sample average"
+        },
+        {
+          "feature": "precipitation_sum",
+          "cluster_mean": 2.61,
+          "global_mean": 1.53,
+          "z_score": 1.79,
+          "description": "very HIGH",
+          "summary": "much higher rainfall than the India sample average"
+        },
+        {
+          "feature": "wind_speed_10m_mean_interannual_std",
+          "cluster_mean": 0.06,
+          "global_mean": 0.13,
+          "z_score": -1.77,
+          "description": "very LOW",
+          "summary": "much lower year-to-year wind variability than the India sample average"
+        },
+        {
+          "feature": "soil_air_temp_diff",
+          "cluster_mean": -0.62,
+          "global_mean": 0.41,
+          "z_score": -1.53,
+          "description": "very LOW",
+          "summary": "much lower soil air temp diff than the India sample average"
+        },
+        {
+          "feature": "relative_humidity_2m_mean",
+          "cluster_mean": 75.88,
+          "global_mean": 58.89,
+          "z_score": 1.5,
+          "description": "very HIGH",
+          "summary": "much higher humidity than the India sample average"
+        },
+        {
+          "feature": "relative_humidity_2m_max",
+          "cluster_mean": 75.88,
+          "global_mean": 58.89,
+          "z_score": 1.5,
+          "description": "very HIGH",
+          "summary": "much higher peak humidity than the India sample average"
+        },
+        {
+          "feature": "relative_humidity_2m_min",
+          "cluster_mean": 75.88,
+          "global_mean": 58.89,
+          "z_score": 1.5,
+          "description": "very HIGH",
+          "summary": "much higher minimum humidity than the India sample average"
+        },
+        {
+          "feature": "cloud_cover_mean",
+          "cluster_mean": 66.75,
+          "global_mean": 49.24,
+          "z_score": 1.48,
+          "description": "HIGH",
+          "summary": "higher cloud cover mean than the India sample average"
+        },
+        {
+          "feature": "cloud_cover_low_mean",
+          "cluster_mean": 66.75,
+          "global_mean": 49.24,
+          "z_score": 1.48,
+          "description": "HIGH",
+          "summary": "higher cloud cover low mean than the India sample average"
+        },
+        {
+          "feature": "cloud_cover_mid_mean",
+          "cluster_mean": 66.75,
+          "global_mean": 49.24,
+          "z_score": 1.48,
+          "description": "HIGH",
+          "summary": "higher cloud cover mid mean than the India sample average"
+        },
+        {
+          "feature": "cloud_cover_high_mean",
+          "cluster_mean": 66.75,
+          "global_mean": 49.24,
+          "z_score": 1.48,
+          "description": "HIGH",
+          "summary": "higher cloud cover high mean than the India sample average"
+        },
+        {
+          "feature": "nasa_solar_irradiance_allsky",
+          "cluster_mean": 11.19,
+          "global_mean": 11.59,
+          "z_score": -1.37,
+          "description": "LOW",
+          "summary": "lower all-sky solar potential than the India sample average"
+        },
+        {
+          "feature": "precipitation_sum_interannual_std",
+          "cluster_mean": 125.74,
+          "global_mean": 89.48,
+          "z_score": 1.33,
+          "description": "HIGH",
+          "summary": "higher year-to-year rainfall variability than the India sample average"
+        },
+        {
+          "feature": "wind_power_density_80m",
+          "cluster_mean": 0.18,
+          "global_mean": 1.12,
+          "z_score": -1.25,
+          "description": "LOW",
+          "summary": "lower wind energy potential than average"
+        },
+        {
+          "feature": "wind_power_density_120m",
+          "cluster_mean": 0.21,
+          "global_mean": 1.33,
+          "z_score": -1.25,
+          "description": "LOW",
+          "summary": "lower wind energy potential than average"
+        },
+        {
+          "feature": "wind_power_density_180m",
+          "cluster_mean": 0.25,
+          "global_mean": 1.58,
+          "z_score": -1.25,
+          "description": "LOW",
+          "summary": "lower wind energy potential than average"
+        },
+        {
+          "feature": "nasa_uv_index",
+          "cluster_mean": 1.43,
+          "global_mean": 1.64,
+          "z_score": -1.09,
+          "description": "LOW",
+          "summary": "lower UV intensity than the India sample average"
+        },
+        {
+          "feature": "wind_direction_10m_mean",
+          "cluster_mean": 171.23,
+          "global_mean": 196.22,
+          "z_score": -1.07,
+          "description": "LOW",
+          "summary": "lower wind direction 10m mean than the India sample average"
+        },
+        {
+          "feature": "growing_degree_days",
+          "cluster_mean": 10.28,
+          "global_mean": 14.01,
+          "z_score": -0.75,
+          "description": "LOW",
+          "summary": "lower growing degree days than the India sample average"
+        },
+        {
+          "feature": "temperature_2m_mean_interannual_std",
+          "cluster_mean": 0.37,
+          "global_mean": 0.44,
+          "z_score": -0.65,
+          "description": "LOW",
+          "summary": "lower year-to-year temperature variability than the India sample average"
+        },
+        {
+          "feature": "surface_pressure_mean",
+          "cluster_mean": 92.16,
+          "global_mean": 95.35,
+          "z_score": -0.6,
+          "description": "LOW",
+          "summary": "lower surface pressure mean than the India sample average"
+        },
+        {
+          "feature": "nasa_earth_skin_temperature",
+          "cluster_mean": 19.51,
+          "global_mean": 23.56,
+          "z_score": -0.51,
+          "description": "LOW",
+          "summary": "lower nasa earth skin temperature than the India sample average"
+        },
+        {
+          "feature": "soil_temp_proxy",
+          "cluster_mean": 19.51,
+          "global_mean": 23.56,
+          "z_score": -0.51,
+          "description": "LOW",
+          "summary": "lower soil temp proxy than the India sample average"
+        }
+      ]
+    },
+    "4": {
+      "cluster_id": 4,
+      "size": 231,
+      "pct": 20.0,
+      "characteristics": [
+        {
+          "feature": "wind_shear_coefficient",
+          "cluster_mean": 0.14,
+          "global_mean": 0.14,
+          "z_score": 0.94,
+          "description": "HIGH",
+          "summary": "stronger vertical wind change than the India sample average"
+        },
+        {
+          "feature": "soil_air_temp_diff",
+          "cluster_mean": 0.78,
+          "global_mean": 0.41,
+          "z_score": 0.54,
+          "description": "HIGH",
+          "summary": "higher soil air temp diff than the India sample average"
+        }
+      ]
+    },
+    "5": {
+      "cluster_id": 5,
+      "size": 222,
+      "pct": 19.3,
+      "characteristics": [
+        {
+          "feature": "nasa_solar_irradiance_clearsky",
+          "cluster_mean": 20.35,
+          "global_mean": 22.04,
+          "z_score": -1.31,
+          "description": "LOW",
+          "summary": "lower clear-sky solar potential than the India sample average"
+        },
+        {
+          "feature": "solar_utilization_ratio",
+          "cluster_mean": 0.57,
+          "global_mean": 0.53,
+          "z_score": 1.17,
+          "description": "HIGH",
+          "summary": "more reliable solar availability than average"
+        },
+        {
+          "feature": "nasa_uv_index",
+          "cluster_mean": 1.42,
+          "global_mean": 1.64,
+          "z_score": -1.12,
+          "description": "LOW",
+          "summary": "lower UV intensity than the India sample average"
+        },
+        {
+          "feature": "temperature_2m_mean_interannual_std",
+          "cluster_mean": 0.57,
+          "global_mean": 0.44,
+          "z_score": 1.08,
+          "description": "HIGH",
+          "summary": "higher year-to-year temperature variability than the India sample average"
+        },
+        {
+          "feature": "wind_shear_coefficient",
+          "cluster_mean": 0.14,
+          "global_mean": 0.14,
+          "z_score": 0.94,
+          "description": "HIGH",
+          "summary": "stronger vertical wind change than the India sample average"
+        },
+        {
+          "feature": "wind_direction_10m_mean",
+          "cluster_mean": 214.39,
+          "global_mean": 196.22,
+          "z_score": 0.78,
+          "description": "HIGH",
+          "summary": "higher wind direction 10m mean than the India sample average"
+        },
+        {
+          "feature": "precipitation_sum_interannual_std",
+          "cluster_mean": 71.87,
+          "global_mean": 89.48,
+          "z_score": -0.65,
+          "description": "LOW",
+          "summary": "lower year-to-year rainfall variability than the India sample average"
+        },
+        {
+          "feature": "relative_humidity_2m_mean",
+          "cluster_mean": 51.77,
+          "global_mean": 58.89,
+          "z_score": -0.63,
+          "description": "LOW",
+          "summary": "lower humidity than the India sample average"
+        },
+        {
+          "feature": "relative_humidity_2m_max",
+          "cluster_mean": 51.77,
+          "global_mean": 58.89,
+          "z_score": -0.63,
+          "description": "LOW",
+          "summary": "lower peak humidity than the India sample average"
+        },
+        {
+          "feature": "relative_humidity_2m_min",
+          "cluster_mean": 51.77,
+          "global_mean": 58.89,
+          "z_score": -0.63,
+          "description": "LOW",
+          "summary": "lower minimum humidity than the India sample average"
+        },
+        {
+          "feature": "cloud_cover_mean",
+          "cluster_mean": 42.25,
+          "global_mean": 49.24,
+          "z_score": -0.59,
+          "description": "LOW",
+          "summary": "lower cloud cover mean than the India sample average"
+        },
+        {
+          "feature": "cloud_cover_low_mean",
+          "cluster_mean": 42.25,
+          "global_mean": 49.24,
+          "z_score": -0.59,
+          "description": "LOW",
+          "summary": "lower cloud cover low mean than the India sample average"
+        },
+        {
+          "feature": "cloud_cover_mid_mean",
+          "cluster_mean": 42.25,
+          "global_mean": 49.24,
+          "z_score": -0.59,
+          "description": "LOW",
+          "summary": "lower cloud cover mid mean than the India sample average"
+        },
+        {
+          "feature": "cloud_cover_high_mean",
+          "cluster_mean": 42.25,
+          "global_mean": 49.24,
+          "z_score": -0.59,
+          "description": "LOW",
+          "summary": "lower cloud cover high mean than the India sample average"
+        },
+        {
+          "feature": "surface_pressure_mean",
+          "cluster_mean": 98.37,
+          "global_mean": 95.35,
+          "z_score": 0.57,
+          "description": "HIGH",
+          "summary": "higher surface pressure mean than the India sample average"
+        }
+      ]
+    },
+    "6": {
+      "cluster_id": 6,
+      "size": 200,
+      "pct": 17.3,
+      "characteristics": [
+        {
+          "feature": "nasa_uv_index",
+          "cluster_mean": 1.89,
+          "global_mean": 1.64,
+          "z_score": 1.26,
+          "description": "HIGH",
+          "summary": "higher UV intensity than the India sample average"
+        },
+        {
+          "feature": "wind_power_density_80m",
+          "cluster_mean": 2.06,
+          "global_mean": 1.12,
+          "z_score": 1.24,
+          "description": "HIGH",
+          "summary": "higher wind energy potential than average"
+        },
+        {
+          "feature": "wind_power_density_120m",
+          "cluster_mean": 2.44,
+          "global_mean": 1.33,
+          "z_score": 1.24,
+          "description": "HIGH",
+          "summary": "higher wind energy potential than average"
+        },
+        {
+          "feature": "wind_power_density_180m",
+          "cluster_mean": 2.9,
+          "global_mean": 1.58,
+          "z_score": 1.24,
+          "description": "HIGH",
+          "summary": "higher wind energy potential than average"
+        },
+        {
+          "feature": "wind_speed_10m_mean",
+          "cluster_mean": 3.97,
+          "global_mean": 3.12,
+          "z_score": 1.11,
+          "description": "HIGH",
+          "summary": "higher surface wind speed than the India sample average"
+        },
+        {
+          "feature": "wind_speed_10m_max",
+          "cluster_mean": 3.97,
+          "global_mean": 3.12,
+          "z_score": 1.11,
+          "description": "HIGH",
+          "summary": "higher wind speed 10m max than the India sample average"
+        },
+        {
+          "feature": "wind_speed_80m_mean",
+          "cluster_mean": 5.31,
+          "global_mean": 4.17,
+          "z_score": 1.11,
+          "description": "HIGH",
+          "summary": "higher elevated wind speed than the India sample average"
+        },
+        {
+          "feature": "wind_speed_80m_max",
+          "cluster_mean": 5.31,
+          "global_mean": 4.17,
+          "z_score": 1.11,
+          "description": "HIGH",
+          "summary": "higher wind speed 80m max than the India sample average"
+        },
+        {
+          "feature": "wind_speed_120m_mean",
+          "cluster_mean": 5.62,
+          "global_mean": 4.41,
+          "z_score": 1.11,
+          "description": "HIGH",
+          "summary": "higher wind speed 120m mean than the India sample average"
+        },
+        {
+          "feature": "wind_speed_120m_max",
+          "cluster_mean": 5.62,
+          "global_mean": 4.41,
+          "z_score": 1.11,
+          "description": "HIGH",
+          "summary": "higher wind speed 120m max than the India sample average"
+        },
+        {
+          "feature": "wind_speed_180m_mean",
+          "cluster_mean": 5.95,
+          "global_mean": 4.67,
+          "z_score": 1.11,
+          "description": "HIGH",
+          "summary": "higher wind speed 180m mean than the India sample average"
+        },
+        {
+          "feature": "wind_speed_180m_max",
+          "cluster_mean": 5.95,
+          "global_mean": 4.67,
+          "z_score": 1.11,
+          "description": "HIGH",
+          "summary": "higher wind speed 180m max than the India sample average"
+        },
+        {
+          "feature": "soil_air_temp_diff",
+          "cluster_mean": 0.99,
+          "global_mean": 0.41,
+          "z_score": 0.86,
+          "description": "HIGH",
+          "summary": "higher soil air temp diff than the India sample average"
+        },
+        {
+          "feature": "wind_speed_10m_mean_interannual_std",
+          "cluster_mean": 0.17,
+          "global_mean": 0.13,
+          "z_score": 0.85,
+          "description": "HIGH",
+          "summary": "higher year-to-year wind variability than the India sample average"
+        },
+        {
+          "feature": "nasa_specific_humidity",
+          "cluster_mean": 13.99,
+          "global_mean": 11.33,
+          "z_score": 0.84,
+          "description": "HIGH",
+          "summary": "higher nasa specific humidity than the India sample average"
+        },
+        {
+          "feature": "shortwave_radiation_sum",
+          "cluster_mean": 19.21,
+          "global_mean": 18.14,
+          "z_score": 0.75,
+          "description": "HIGH",
+          "summary": "higher solar radiation than the India sample average"
+        },
+        {
+          "feature": "nasa_dewpoint_2m",
+          "cluster_mean": 17.74,
+          "global_mean": 12.17,
+          "z_score": 0.71,
+          "description": "HIGH",
+          "summary": "higher nasa dewpoint 2m than the India sample average"
+        },
+        {
+          "feature": "dewpoint_2m_mean",
+          "cluster_mean": 17.74,
+          "global_mean": 12.17,
+          "z_score": 0.71,
+          "description": "HIGH",
+          "summary": "higher dewpoint 2m mean than the India sample average"
+        },
+        {
+          "feature": "nasa_solar_irradiance_allsky",
+          "cluster_mean": 11.8,
+          "global_mean": 11.59,
+          "z_score": 0.69,
+          "description": "HIGH",
+          "summary": "higher all-sky solar potential than the India sample average"
+        },
+        {
+          "feature": "nasa_solar_irradiance_clearsky",
+          "cluster_mean": 22.91,
+          "global_mean": 22.04,
+          "z_score": 0.67,
+          "description": "HIGH",
+          "summary": "higher clear-sky solar potential than the India sample average"
+        },
+        {
+          "feature": "relative_humidity_2m_mean",
+          "cluster_mean": 66.06,
+          "global_mean": 58.89,
+          "z_score": 0.63,
+          "description": "HIGH",
+          "summary": "higher humidity than the India sample average"
+        },
+        {
+          "feature": "relative_humidity_2m_max",
+          "cluster_mean": 66.06,
+          "global_mean": 58.89,
+          "z_score": 0.63,
+          "description": "HIGH",
+          "summary": "higher peak humidity than the India sample average"
+        },
+        {
+          "feature": "relative_humidity_2m_min",
+          "cluster_mean": 66.06,
+          "global_mean": 58.89,
+          "z_score": 0.63,
+          "description": "HIGH",
+          "summary": "higher minimum humidity than the India sample average"
+        },
+        {
+          "feature": "cloud_cover_mean_interannual_std",
+          "cluster_mean": 3.28,
+          "global_mean": 4.67,
+          "z_score": -0.61,
+          "description": "LOW",
+          "summary": "lower year-to-year cloud variability than the India sample average"
+        },
+        {
+          "feature": "precipitation_sum_interannual_std",
+          "cluster_mean": 105.71,
+          "global_mean": 89.48,
+          "z_score": 0.59,
+          "description": "HIGH",
+          "summary": "higher year-to-year rainfall variability than the India sample average"
+        },
+        {
+          "feature": "nasa_longwave_radiation",
+          "cluster_mean": 34.26,
+          "global_mean": 32.13,
+          "z_score": 0.54,
+          "description": "HIGH",
+          "summary": "higher nasa longwave radiation than the India sample average"
+        }
+      ]
+    },
+    "7": {
+      "cluster_id": 7,
+      "size": 88,
+      "pct": 7.6,
+      "characteristics": [
+        {
+          "feature": "nasa_longwave_radiation",
+          "cluster_mean": 24.44,
+          "global_mean": 32.13,
+          "z_score": -1.97,
+          "description": "very LOW",
+          "summary": "much lower nasa longwave radiation than the India sample average"
+        },
+        {
+          "feature": "growing_degree_days",
+          "cluster_mean": 4.18,
+          "global_mean": 14.01,
+          "z_score": -1.97,
+          "description": "very LOW",
+          "summary": "much lower growing degree days than the India sample average"
+        },
+        {
+          "feature": "surface_pressure_mean",
+          "cluster_mean": 85.21,
+          "global_mean": 95.35,
+          "z_score": -1.92,
+          "description": "very LOW",
+          "summary": "much lower surface pressure mean than the India sample average"
+        },
+        {
+          "feature": "nasa_earth_skin_temperature",
+          "cluster_mean": 9.51,
+          "global_mean": 23.56,
+          "z_score": -1.75,
+          "description": "very LOW",
+          "summary": "much lower nasa earth skin temperature than the India sample average"
+        },
+        {
+          "feature": "soil_temp_proxy",
+          "cluster_mean": 9.51,
+          "global_mean": 23.56,
+          "z_score": -1.75,
+          "description": "very LOW",
+          "summary": "much lower soil temp proxy than the India sample average"
+        },
+        {
+          "feature": "temperature_2m_mean",
+          "cluster_mean": 10.14,
+          "global_mean": 23.15,
+          "z_score": -1.71,
+          "description": "very LOW",
+          "summary": "much lower average temperature than the India sample average"
+        },
+        {
+          "feature": "temperature_2m_max",
+          "cluster_mean": 10.14,
+          "global_mean": 23.15,
+          "z_score": -1.71,
+          "description": "very LOW",
+          "summary": "much lower daytime temperature than the India sample average"
+        },
+        {
+          "feature": "temperature_2m_min",
+          "cluster_mean": 10.14,
+          "global_mean": 23.15,
+          "z_score": -1.71,
+          "description": "very LOW",
+          "summary": "much lower night temperature than the India sample average"
+        },
+        {
+          "feature": "nasa_solar_irradiance_allsky",
+          "cluster_mean": 11.11,
+          "global_mean": 11.59,
+          "z_score": -1.66,
+          "description": "very LOW",
+          "summary": "much lower all-sky solar potential than the India sample average"
+        },
+        {
+          "feature": "solar_utilization_ratio",
+          "cluster_mean": 0.48,
+          "global_mean": 0.53,
+          "z_score": -1.58,
+          "description": "very LOW",
+          "summary": "much more reliable solar availability than average"
+        },
+        {
+          "feature": "nasa_specific_humidity",
+          "cluster_mean": 6.37,
+          "global_mean": 11.33,
+          "z_score": -1.57,
+          "description": "very LOW",
+          "summary": "much lower nasa specific humidity than the India sample average"
+        },
+        {
+          "feature": "nasa_dewpoint_2m",
+          "cluster_mean": -0.11,
+          "global_mean": 12.17,
+          "z_score": -1.56,
+          "description": "very LOW",
+          "summary": "much lower nasa dewpoint 2m than the India sample average"
+        },
+        {
+          "feature": "dewpoint_2m_mean",
+          "cluster_mean": -0.11,
+          "global_mean": 12.17,
+          "z_score": -1.56,
+          "description": "very LOW",
+          "summary": "much lower dewpoint 2m mean than the India sample average"
+        },
+        {
+          "feature": "soil_air_temp_diff",
+          "cluster_mean": -0.62,
+          "global_mean": 0.41,
+          "z_score": -1.54,
+          "description": "very LOW",
+          "summary": "much lower soil air temp diff than the India sample average"
+        },
+        {
+          "feature": "cloud_cover_mean",
+          "cluster_mean": 66.17,
+          "global_mean": 49.24,
+          "z_score": 1.43,
+          "description": "HIGH",
+          "summary": "higher cloud cover mean than the India sample average"
+        },
+        {
+          "feature": "cloud_cover_low_mean",
+          "cluster_mean": 66.17,
+          "global_mean": 49.24,
+          "z_score": 1.43,
+          "description": "HIGH",
+          "summary": "higher cloud cover low mean than the India sample average"
+        },
+        {
+          "feature": "cloud_cover_mid_mean",
+          "cluster_mean": 66.17,
+          "global_mean": 49.24,
+          "z_score": 1.43,
+          "description": "HIGH",
+          "summary": "higher cloud cover mid mean than the India sample average"
+        },
+        {
+          "feature": "cloud_cover_high_mean",
+          "cluster_mean": 66.17,
+          "global_mean": 49.24,
+          "z_score": 1.43,
+          "description": "HIGH",
+          "summary": "higher cloud cover high mean than the India sample average"
+        },
+        {
+          "feature": "wind_speed_10m_mean_interannual_std",
+          "cluster_mean": 0.08,
+          "global_mean": 0.13,
+          "z_score": -1.33,
+          "description": "LOW",
+          "summary": "lower year-to-year wind variability than the India sample average"
+        },
+        {
+          "feature": "cloud_cover_mean_interannual_std",
+          "cluster_mean": 7.59,
+          "global_mean": 4.67,
+          "z_score": 1.28,
+          "description": "HIGH",
+          "summary": "higher year-to-year cloud variability than the India sample average"
+        },
+        {
+          "feature": "wind_speed_10m_mean",
+          "cluster_mean": 2.21,
+          "global_mean": 3.12,
+          "z_score": -1.18,
+          "description": "LOW",
+          "summary": "lower surface wind speed than the India sample average"
+        },
+        {
+          "feature": "wind_speed_10m_max",
+          "cluster_mean": 2.21,
+          "global_mean": 3.12,
+          "z_score": -1.18,
+          "description": "LOW",
+          "summary": "lower wind speed 10m max than the India sample average"
+        },
+        {
+          "feature": "wind_speed_80m_mean",
+          "cluster_mean": 2.96,
+          "global_mean": 4.17,
+          "z_score": -1.18,
+          "description": "LOW",
+          "summary": "lower elevated wind speed than the India sample average"
+        },
+        {
+          "feature": "wind_speed_80m_max",
+          "cluster_mean": 2.96,
+          "global_mean": 4.17,
+          "z_score": -1.18,
+          "description": "LOW",
+          "summary": "lower wind speed 80m max than the India sample average"
+        },
+        {
+          "feature": "wind_speed_120m_mean",
+          "cluster_mean": 3.13,
+          "global_mean": 4.41,
+          "z_score": -1.18,
+          "description": "LOW",
+          "summary": "lower wind speed 120m mean than the India sample average"
+        },
+        {
+          "feature": "wind_speed_120m_max",
+          "cluster_mean": 3.13,
+          "global_mean": 4.41,
+          "z_score": -1.18,
+          "description": "LOW",
+          "summary": "lower wind speed 120m max than the India sample average"
+        },
+        {
+          "feature": "wind_speed_180m_mean",
+          "cluster_mean": 3.31,
+          "global_mean": 4.67,
+          "z_score": -1.18,
+          "description": "LOW",
+          "summary": "lower wind speed 180m mean than the India sample average"
+        },
+        {
+          "feature": "wind_speed_180m_max",
+          "cluster_mean": 3.31,
+          "global_mean": 4.67,
+          "z_score": -1.18,
+          "description": "LOW",
+          "summary": "lower wind speed 180m max than the India sample average"
+        },
+        {
+          "feature": "nasa_solar_irradiance_clearsky",
+          "cluster_mean": 23.44,
+          "global_mean": 22.04,
+          "z_score": 1.09,
+          "description": "HIGH",
+          "summary": "higher clear-sky solar potential than the India sample average"
+        },
+        {
+          "feature": "wind_power_density_80m",
+          "cluster_mean": 0.36,
+          "global_mean": 1.12,
+          "z_score": -1.01,
+          "description": "LOW",
+          "summary": "lower wind energy potential than average"
+        },
+        {
+          "feature": "wind_power_density_120m",
+          "cluster_mean": 0.43,
+          "global_mean": 1.33,
+          "z_score": -1.01,
+          "description": "LOW",
+          "summary": "lower wind energy potential than average"
+        },
+        {
+          "feature": "wind_power_density_180m",
+          "cluster_mean": 0.51,
+          "global_mean": 1.58,
+          "z_score": -1.01,
+          "description": "LOW",
+          "summary": "lower wind energy potential than average"
+        },
+        {
+          "feature": "wind_shear_coefficient",
+          "cluster_mean": 0.14,
+          "global_mean": 0.14,
+          "z_score": 0.94,
+          "description": "HIGH",
+          "summary": "stronger vertical wind change than the India sample average"
+        },
+        {
+          "feature": "shortwave_radiation_sum",
+          "cluster_mean": 17.06,
+          "global_mean": 18.14,
+          "z_score": -0.76,
+          "description": "LOW",
+          "summary": "lower solar radiation than the India sample average"
+        },
+        {
+          "feature": "wind_direction_10m_mean",
+          "cluster_mean": 210.81,
+          "global_mean": 196.22,
+          "z_score": 0.62,
+          "description": "HIGH",
+          "summary": "higher wind direction 10m mean than the India sample average"
+        },
+        {
+          "feature": "nasa_uv_index",
+          "cluster_mean": 1.53,
+          "global_mean": 1.64,
+          "z_score": -0.57,
+          "description": "LOW",
+          "summary": "lower UV intensity than the India sample average"
+        },
+        {
+          "feature": "temperature_2m_mean_interannual_std",
+          "cluster_mean": 0.5,
+          "global_mean": 0.44,
+          "z_score": 0.52,
+          "description": "HIGH",
+          "summary": "higher year-to-year temperature variability than the India sample average"
+        }
+      ]
+    }
+  }
+}

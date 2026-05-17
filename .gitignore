@@ -1,0 +1,55 @@
+# Data (too large for git)
+data/raw/
+data/interim/
+*.parquet
+*.h5
+
+# Processed data
+# Ignore large generated artifacts by default, but keep lightweight
+# deployment/runtime assets that the dashboard needs.
+data/processed/*
+!data/processed/climate_normals.csv
+!data/processed/climate_normals_clustered.csv
+
+# Outputs
+# Keep deploy-time model metadata, compact trained models, and report tables.
+outputs/figures/
+outputs/models/*
+!outputs/models/prediction_metadata.json
+!outputs/models/scaler.pkl
+!outputs/models/pca_reducer.pkl
+!outputs/models/gmm_model.pkl
+!outputs/models/gmm_k8_model.pkl
+
+outputs/tables/*
+!outputs/tables/agriculture_insights.csv
+!outputs/tables/algorithm_comparison.csv
+!outputs/tables/cluster_profiles.csv
+!outputs/tables/disaster_insights.csv
+!outputs/tables/energy_insights.csv
+!outputs/tables/urban_insights.csv
+
+# Logs and caches
+logs/
+.streamlit/
+
+# Environment
+.env
+venv/
+.venv/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db

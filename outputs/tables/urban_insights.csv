@@ -1,0 +1,9 @@
+cluster,points,temperature_2m_mean_mean,relative_humidity_2m_mean_mean,wind_speed_10m_mean_mean,cloud_cover_mean_mean,shortwave_radiation_sum_mean,temperature_2m_mean_interannual_std_mean,thermal_stress_index_mean,outdoor_comfort_score_mean,heat_island_potential_mean,urban_comfort_score,urban_summary,urban_recommendation
+5,222,25.714,51.769,2.896,42.252,17.479,0.566,0.381,0.868,0.111,2.869,outdoor-friendly,Suitable for public-space activation and walkable urban design.
+4,231,26.056,55.612,3.395,44.402,18.734,0.412,0.457,0.879,0.136,2.787,outdoor-friendly,Suitable for public-space activation and walkable urban design.
+0,135,25.539,69.919,2.756,53.414,17.607,0.364,0.588,0.811,0.047,2.562,outdoor-friendly,Suitable for public-space activation and walkable urban design.
+6,200,26.227,66.059,3.972,50.961,19.212,0.387,0.548,0.787,0.124,2.352,outdoor-friendly,Suitable for public-space activation and walkable urban design.
+1,49,-2.59,62.354,3.356,66.756,18.436,0.276,0.0,0.489,0.022,1.912,moderate-urban-comfort,Moderate comfort profile; use mixed passive cooling and open-space strategies.
+7,88,10.136,58.276,2.209,66.171,17.061,0.503,0.0,0.508,0.066,1.9,moderate-urban-comfort,Moderate comfort profile; use mixed passive cooling and open-space strategies.
+2,139,26.727,42.983,3.573,33.793,19.761,0.519,0.606,0.719,0.275,1.72,outdoor-friendly,Suitable for public-space activation and walkable urban design.
+3,89,20.132,75.883,1.631,66.747,14.982,0.368,0.544,0.608,0.114,1.16,outdoor-friendly,Moderate comfort profile; use mixed passive cooling and open-space strategies.
